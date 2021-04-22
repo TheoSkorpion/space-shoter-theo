@@ -1,6 +1,3 @@
-controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
-	
-})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     projectile = sprites.createProjectileFromSprite(img`
         . . . . . . . . . . . . . . . . 
@@ -327,5 +324,18 @@ game.onUpdateInterval(2000, function () {
 forever(function () {
     if (info.score() == 100) {
         game.over(true)
+    }
+    if (info.score() > 20) {
+        EnemyShip.vx = -30
+    } else if (info.score() > 30) {
+        EnemyShip.vx = -40
+    } else if (info.score() > 40) {
+        EnemyShip.vx = -50
+    } else if (info.score() > 55) {
+        EnemyShip.vx = -65
+    } else if (info.score() > 70) {
+        EnemyShip.vx = -85
+    } else {
+    	
     }
 })
