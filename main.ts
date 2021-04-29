@@ -333,7 +333,7 @@ forever(function () {
         EnemyShip.vx = -50
     } else if (info.score() > 55) {
         EnemyShip.vx = -65
-    } else if (info.score() > 70) {
+    } else if (info.score() > 75) {
         EnemyShip.vx = -85
     } else {
     	
