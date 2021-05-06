@@ -297,7 +297,7 @@ mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 mySprite.setFlag(SpriteFlag.StayInScreen, true)
-info.setLife(3)
+info.setLife(1)
 game.onUpdateInterval(2000, function () {
     EnemyShip = sprites.create(img`
         . . . . . . . . . c c 8 . . . . 
